@@ -20,6 +20,14 @@
   margin: 45px 10px 0 10px;
 }
 
+#intro > h1 {
+  font-size: 3rem;
+}
+
+#experience {
+  margin-top: 10px;
+}
+
 #outside-carosel {
   width: 100%;
   overflow: hidden;
@@ -29,10 +37,32 @@
   width: 300%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* position: relative; */
 }
 
 #carosel > div {
   text-align: center;
   width: 60%;
   margin: auto;
+  margin-top: 10px;
+}
+
+#carosel > div > p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#before,
+#next {
+  position: absolute;
+  top: 370px;
+  transform: translateY(-50%);
+}
+
+#before {
+  left: 2%;
+}
+
+#next {
+  right: 2%;
 }
