@@ -16,11 +16,7 @@ function show_nav_bar() {
   });
 
   intro.addEventListener('click', () => {
-    if (on === false) {
-      on = true;
-      nav_bar.classList.remove('hide');
-    } else {
-      on = false;
+    if (on === true) {
       nav_bar.classList.add('hide');
     }
   });

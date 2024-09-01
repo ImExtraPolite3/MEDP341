@@ -42,6 +42,8 @@
 .text,
 a {
   color: #666666;
+  font-size: 1.2rem;
+  line-height: 30px;
 }
 
 #experience,
