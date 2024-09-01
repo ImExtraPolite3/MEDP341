@@ -16,6 +16,21 @@
   margin: 5px 10px;
 }
 
+#nav-bar {
+  position: fixed;
+  border: solid;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: -5px;
+}
+
+#nav-bar > a {
+  color: lightgray;
+  text-decoration: none;
+}
+
 #intro {
   margin: 45px 10px 0 10px;
 }
@@ -24,45 +39,36 @@
   font-size: 3rem;
 }
 
-#experience {
+.text,
+a {
+  color: #666666;
+}
+
+#experience,
+#interest {
   margin-top: 10px;
 }
 
-#outside-carosel {
-  width: 100%;
-  overflow: hidden;
-}
-
-#carosel {
-  width: 300%;
+#technologies {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* position: relative; */
-}
-
-#carosel > div {
-  text-align: center;
-  width: 60%;
-  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 10px;
+  gap: 20px;
 }
 
-#carosel > div > p {
+#technologies > div {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 1px lightgray;
+}
+
+#technologies > div > p {
+  font-size: 1.2rem;
   font-weight: bold;
-  font-size: 2rem;
 }
 
-#before,
-#next {
-  position: absolute;
-  top: 370px;
-  transform: translateY(-50%);
-}
-
-#before {
-  left: 2%;
-}
-
-#next {
-  right: 2%;
+.hide {
+  display: none;
 }

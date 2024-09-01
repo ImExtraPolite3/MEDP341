@@ -9,46 +9,50 @@
   <body>
     <div id="container">
       <div id="nav">
-        <!-- add menu -->
-        <img src="images/icons8-menu.svg" width="30px" alt="hambuger-menu" />
+        <img
+          src="images/icons8-menu.svg"
+          width="30px"
+          alt="hambuger-menu"
+          id="menu"
+        />
+      </div>
+      <div id="nav-bar" class="hide">
+        <a href="other-pages/assignment_one.html">assignment 1</a>
       </div>
       <div id="intro">
         <h1>Welcome</h1>
-        <p>
+        <p class="text">
           Hello! My name is Abdul. Im an Emerging Media major and a Computer
           Science minor student.
         </p>
         <div id="experience">
           <h2>Experience:</h2>
-          <p>I have experience with the following technologies:</p>
-          <div id="outside-carosel">
-            <div id="before">
-              <img src="images/chevron-left.svg" width="50px" alt="" />
+          <p class="text">I have experience with the following technologies:</p>
+          <div id="technologies">
+            <div>
+              <p>HTML</p>
+              <img src="images/HTML5.svg" alt="HTML-Logo" />
             </div>
-            <div id="next">
-              <img src="images/chevron-right.svg" width="50px" alt="" />
+            <div>
+              <p>CSS</p>
+              <img src="images/CSS3.svg" alt="CSS-logo" />
             </div>
-            <div id="carosel">
-              <div>
-                <p>HTML</p>
-                <!-- Add html logo image -->
-                <img src="images/HTML5.svg" alt="HTML-Logo" />
-              </div>
-              <div>
-                <p>CSS</p>
-                <!-- Add css logo image -->
-                <img src="images/CSS3.svg" alt="CSS-logo" />
-              </div>
-              <div>
-                <p>JavaScript</p>
-                <!-- Add javascript logo image -->
-                <img src="images/JavaScript.svg" alt="JavaScript-Logo" />
-              </div>
+            <div>
+              <p>JavaScript</p>
+              <img src="images/JavaScript.svg" alt="JavaScript-Logo" />
             </div>
           </div>
         </div>
-        <div id="interest"></div>
+        <div id="interest">
+          <h2>Interest:</h2>
+          <p class="text">
+            I have interest in videos games such as
+            <a href="#">Genshin Impact</a>. I also really enjoy watching anime
+            such as <a href="#">Jujutsu Kaisen</a>.
+          </p>
+        </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
