@@ -29,6 +29,11 @@
   display: block;
   color: lightgray;
   text-decoration: none;
+  transition: transform 1s;
+}
+
+#nav-bar > a:hover {
+  transform: scale(1.1);
 }
 
 #answer {
