@@ -65,6 +65,10 @@ a {
     display: none;
   }
 
+  #nav-bar {
+    display: none;
+  }
+
   #container {
     display: flex;
   }

@@ -25,11 +25,6 @@
   margin-top: -5px;
 }
 
-#nav-bar > a {
-  color: lightgray;
-  text-decoration: none;
-}
-
 #intro {
   width: min(95%, 600px);
   margin: 45px auto 0 auto;
@@ -93,6 +88,10 @@ a {
 
 @media (min-width: 840px) {
   #nav {
+    display: none;
+  }
+
+  #nav-bar {
     display: none;
   }
 
