@@ -77,7 +77,12 @@ a {
   box-shadow: 6px 6px 10px 1px lightgray;
 }
 
-#technologies > div > p {
+#technologies > div > a {
+  text-decoration: none;
+}
+
+#technologies > div > a > p {
+  text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
 }
