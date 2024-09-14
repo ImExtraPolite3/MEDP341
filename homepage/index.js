@@ -18,10 +18,9 @@ function slideup() {
   const nav_bar = document.getElementById('nav-bar');
   nav_bar.style.animation = 'slideup 200ms';
 
-  nav_bar.addEventListener('animationend', () => {
+  setTimeout(() => {
     nav_bar.classList.add('hide');
-    // nav_bar.style.display = 'none';
-  });
+  }, 200);
 }
 
 function show_nav_bar() {
