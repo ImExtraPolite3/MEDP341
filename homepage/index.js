@@ -1,6 +1,6 @@
 function slidedown() {
   const nav_bar = document.getElementById('nav-bar');
-  nav_bar.classList.remove('hide');
+  nav_bar.style.display = 'block';
 
   nav_bar.style.animation = 'slidedown 200ms';
 }
@@ -10,7 +10,7 @@ function slideup() {
   nav_bar.style.animation = 'slideup 200ms';
 
   setTimeout(() => {
-    nav_bar.classList.add('hide');
+    nav_bar.style.display = 'none';
   }, 200);
 }
 

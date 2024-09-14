@@ -4,10 +4,6 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-.hide {
-  display: none;
-}
-
 #nav {
   width: 100%;
   position: fixed;
@@ -28,6 +24,7 @@
   text-align: center;
   padding: 10px 0;
   margin-top: -5px;
+  display: none;
 }
 
 #nav-wide {
@@ -79,7 +76,7 @@ a {
   width: 100%;
   margin: auto;
   border-radius: 10px;
-  transition: all 1s;
+  transition: all 1000ms;
 }
 
 #technologies > div:hover {
@@ -119,6 +116,23 @@ a {
   }
 }
 
+@media (max-width: 840px) {
+  #intro {
+    animation: slideright 1000ms;
+  }
+
+  @keyframes slideright {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
 @media (min-width: 600px) {
   #technologies {
     display: grid;
@@ -153,7 +167,7 @@ a {
 
   #nav-wide > a {
     text-decoration: none;
-    transition: transform 1s;
+    transition: transform 1000ms;
   }
 
   #nav-wide > a:hover {
@@ -164,7 +178,7 @@ a {
   #intro {
     width: min(55%, 1000px);
     margin: 20px auto 0 auto;
-    animation: slidedown 2s;
+    animation: slidedown 2000ms;
   }
 
   @keyframes navWideSlide {
