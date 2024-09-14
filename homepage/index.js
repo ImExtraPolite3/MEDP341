@@ -1,12 +1,3 @@
-function headingSlideDown() {
-  const heading = document.querySelector('#intro > h1');
-  const body = document.querySelector('body');
-
-  body.addEventListener('load', () => {
-    heading.classList.add('nav-bar-slidedown');
-  });
-}
-
 function slidedown() {
   const nav_bar = document.getElementById('nav-bar');
   nav_bar.classList.remove('hide');
@@ -38,4 +29,3 @@ function show_nav_bar() {
 }
 
 show_nav_bar();
-headingSlideDown();

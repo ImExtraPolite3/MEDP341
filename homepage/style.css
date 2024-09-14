@@ -18,6 +18,7 @@
 #nav > img {
   float: right;
   margin: 5px 10px;
+  cursor: pointer;
 }
 
 #nav-bar {
@@ -27,7 +28,6 @@
   text-align: center;
   padding: 10px 0;
   margin-top: -5px;
-  /* display: none; */
 }
 
 #nav-wide {
@@ -164,6 +164,7 @@ a {
   #intro {
     width: min(55%, 1000px);
     margin: 20px auto 0 auto;
+    animation: slidedown 2s;
   }
 
   @keyframes navWideSlide {
