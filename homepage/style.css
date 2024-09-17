@@ -9,12 +9,41 @@
   position: fixed;
   top: 0;
   background-color: #222222;
+  display: flex;
+  justify-content: end;
 }
 
-#nav > img {
-  float: right;
-  margin: 5px 10px;
+#hamb-menu {
+  height: 40px;
+  border-top: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 25px;
+  margin-right: 10px;
   cursor: pointer;
+}
+
+.create-menu {
+  border: solid white;
+}
+
+.active {
+  #line-one {
+    animation: changefirst 150ms;
+    animation-fill-mode: forwards;
+  }
+
+  #line-two {
+    animation: changesecond 100ms;
+    animation-fill-mode: forwards;
+  }
+
+  #line-three {
+    animation: changelast 150ms;
+    animation-fill-mode: forwards;
+  }
 }
 
 #nav-bar {
@@ -100,6 +129,35 @@ a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+@keyframes changefirst {
+  0% {
+    transform: translateY(0px) rotate(0);
+  }
+  100% {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+
+@keyframes changesecond {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes changelast {
+  0% {
+    transform: translateY(0px) rotate(0);
+  }
+  100% {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
 
 @keyframes slidedown {

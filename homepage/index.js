@@ -15,10 +15,12 @@ function slideup() {
 }
 
 function show_nav_bar() {
-  const menu = document.getElementById('menu');
+  const menu = document.getElementById('hamb-menu');
   const nav_bar = document.getElementById('nav-bar');
 
   menu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+
     if (nav_bar.checkVisibility() === false) {
       nav_bar.classList.remove('hide');
       slidedown();
