@@ -131,6 +131,12 @@ a {
   font-weight: bold;
 }
 
+#week-three {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 @keyframes changefirst {
   0% {
     transform: translateY(0px) rotate(0);
