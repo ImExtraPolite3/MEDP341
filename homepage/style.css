@@ -113,7 +113,7 @@ a {
   width: 100%;
   margin: auto;
   border-radius: 10px;
-  transition: all 1000ms;
+  transition: all 200ms;
 }
 
 #technologies > div:hover {
@@ -190,7 +190,7 @@ a {
 
 @media (max-width: 840px) {
   .main-content {
-    animation: slideright 1000ms;
+    animation: slideright 500ms;
   }
 
   @keyframes slideright {
@@ -234,7 +234,7 @@ a {
     width: min(25%, 1000px);
     padding-top: 20px;
     box-shadow: 0 0 10px 5px lightgray;
-    animation: navWideSlide 1000ms;
+    animation: navWideSlide 500ms;
   }
 
   #nav-wide > a {
@@ -250,7 +250,7 @@ a {
   .main-content {
     width: min(55%, 1000px);
     margin: 20px auto 0 auto;
-    animation: slidedown 2000ms;
+    animation: slidedown 500ms;
   }
 
   @keyframes navWideSlide {
