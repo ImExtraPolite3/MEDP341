@@ -239,7 +239,7 @@ a {
 
   #nav-wide > a {
     text-decoration: none;
-    transition: transform 1000ms;
+    transition: transform 250ms;
   }
 
   #nav-wide > a:hover {

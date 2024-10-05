@@ -2,12 +2,12 @@ function slidedown() {
   const nav_bar = document.getElementById('nav-bar');
   nav_bar.style.display = 'block';
 
-  nav_bar.style.animation = 'slidedown 200ms';
+  nav_bar.style.animation = 'slidedown 150ms';
 }
 
 function slideup() {
   const nav_bar = document.getElementById('nav-bar');
-  nav_bar.style.animation = 'slideup 200ms';
+  nav_bar.style.animation = 'slideup 150ms';
 
   setTimeout(() => {
     nav_bar.style.display = 'none';
@@ -29,5 +29,7 @@ function show_nav_bar() {
     }
   });
 }
+
+function showActive() {}
 
 show_nav_bar();
