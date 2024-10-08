@@ -141,6 +141,14 @@ a {
   margin: 10px 0;
 }
 
+hr {
+  margin: 20px auto;
+  width: 80%;
+  background-color: lightgray;
+  border: none;
+  padding: 2px 0;
+}
+
 @keyframes changefirst {
   0% {
     transform: translateY(0px) rotate(0);
@@ -217,6 +225,14 @@ a {
 }
 
 @media (min-width: 840px) {
+  hr {
+    display: none;
+  }
+
+  .week-five-responses {
+    display: flex;
+  }
+
   #nav {
     display: none;
   }
